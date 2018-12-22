@@ -10,7 +10,7 @@ firearch.connect(firebaseConfig, { timestampsInSnapshots: true });
 
 // Model1.save({
 //   title: 'A title',
-//   subtitle: 'A subtitle'
+//   type: 'QO1G0xp3N0ksK7WxXnUO'
 // })
 // .then(response => {
 //   console.log('RESPONSE: ', response);
@@ -20,8 +20,7 @@ firearch.connect(firebaseConfig, { timestampsInSnapshots: true });
 // });
 
 // Model2.save({
-//   name: 'Another nother name again',
-//   referenceExample: 'UvvYkz14CdtlNhxAXx4U'
+//   name: 'Another name again'
 // })
 // .then(response => {
 //   console.log('RESPONSE: ', response);
@@ -38,20 +37,20 @@ firearch.connect(firebaseConfig, { timestampsInSnapshots: true });
 //     console.log('ERROR: ', error);
 //   });
 
-Model1.findById('UvvYkz14CdtlNhxAXx4U')
-  .then(response => {
-    console.log('RESPONSE: ', response);
-  })
-  .catch(error => {
-    console.log('ERROR: ', error);
-  });
+// Model1.findById('ige8nQX715GWLozazrWr')
+//   .then(response => {
+//     console.log('RESPONSE: ', response);
+//   })
+//   .catch(error => {
+//     console.log('ERROR: ', error);
+//   });
 
-// Model1.find('title', '==', 'A title')
-// .then(response => {
-//   console.log('RESPONSE: ', response);
-// })
-// .catch(error => {
-//   console.log('ERROR: ', error);
-// });
+Model1.find('_id', '==', 'ige8nQX715GWLozazrWr')
+.then(response => {
+  console.log('RESPONSE: ', response);
+})
+.catch(error => {
+  console.log('ERROR: ', error);
+});
 
 
