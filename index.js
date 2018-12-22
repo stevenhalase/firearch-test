@@ -9,33 +9,49 @@ const crypto = require('crypto');
 firearch.connect(firebaseConfig, { timestampsInSnapshots: true });
 
 // Model1.save({
-//   title: 'Some title',
-//   subtitle: 'Some subtitle'
+//   title: 'A title',
+//   subtitle: 'A subtitle'
 // })
 // .then(response => {
 //   console.log('RESPONSE: ', response);
 // })
 // .catch(error => {
 //   console.log('ERROR: ', error);
-// })
+// });
 
 // Model2.save({
-//   name: 'A name',
-//   referenceExample: '4dd423eb052a95cdb407001b3ad03c5f'
+//   name: 'Another nother name again',
+//   referenceExample: 'UvvYkz14CdtlNhxAXx4U'
 // })
 // .then(response => {
 //   console.log('RESPONSE: ', response);
 // })
 // .catch(error => {
 //   console.log('ERROR: ', error);
-// })
+// });
 
-Model2.findById('849cbd68f7a40b1db2229506bd3e576b')
+// Model2.findById('H5K5zlmDUKf45a0nAcjH')
+//   .then(response => {
+//     console.log('RESPONSE: ', response);
+//   })
+//   .catch(error => {
+//     console.log('ERROR: ', error);
+//   });
+
+Model1.findById('UvvYkz14CdtlNhxAXx4U')
   .then(response => {
-    // console.log('RESPONSE: ', response);
+    console.log('RESPONSE: ', response);
   })
   .catch(error => {
-    // console.log('ERROR: ', error);
-  })
+    console.log('ERROR: ', error);
+  });
+
+// Model1.find('title', '==', 'A title')
+// .then(response => {
+//   console.log('RESPONSE: ', response);
+// })
+// .catch(error => {
+//   console.log('ERROR: ', error);
+// });
 
 
